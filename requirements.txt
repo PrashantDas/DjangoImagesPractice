@@ -3,3 +3,5 @@ crispy-bootstrap5==0.7
 django-crispy-forms==2.0
 Pillow
 psycopg2-binary
+boto3
+django-storages
