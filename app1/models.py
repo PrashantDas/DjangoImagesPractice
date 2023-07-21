@@ -9,5 +9,4 @@ class Product(models.Model):
         return reverse('products')    
 
     def __str__(self) -> str:
-        return self.name + ' model'
-    
+        return self.name
