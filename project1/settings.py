@@ -137,10 +137,9 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 MEDIA_ROOT = Path(BASE_DIR) / 'media'
 MEDIA_URL = '/media/'
 
-# STORAGES = {"default": {"BACKEND": "storages.backends.s3boto3.S3Boto3Storage"},
-#            "staticfiles": {"BACKEND": "storages.backends.s3boto3.S3StaticStorage"}}
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
+STORAGES = {"default": {"BACKEND": "storages.backends.s3boto3.S3Boto3Storage"},
+           "staticfiles": {"BACKEND": "storages.backends.s3boto3.S3StaticStorage"}}
+
 
 # AWS Bucket
 AWS_ACCESS_KEY_ID = os.environ["MY_AWS_ACCESS_KEY_ID"]
