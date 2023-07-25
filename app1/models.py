@@ -6,7 +6,7 @@ class Product(models.Model):
     picture = models.ImageField(upload_to='somepictures/')
 
     def get_absolute_url(self):
-        return reverse('products')    
+        return reverse('save')    
 
     def __str__(self) -> str:
         return self.name
