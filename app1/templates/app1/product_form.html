@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Home
+        {% endblock %}</title>
+  </head>
+  <body>
+
+        {% block content %}
+        <div class="row justify-content-center">
+
+          <div class="col col-5">
+            <div class="card">
+              <div class="card-body">
+                <form method="post" enctype="multipart/form-data"> {% csrf_token %}
+                  <legend><h1 class="display-6">Save Picture</h1></legend>
+                  {{ form|crispy }}
+                  <button class="btn btn-secondary" type="submit">Save</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+  
+          </div>        
+     
+        <hr>
+        <center>Prashant Das</center>
+        <center>{{ time|date:"F d, Y" }}</center>
+        <br>   
+        
+        {% endblock %}
+  </body>
+</html>
