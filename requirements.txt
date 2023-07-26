@@ -1,8 +1,0 @@
-Django==4.2.3
-crispy-bootstrap5==0.7
-django-crispy-forms==2.0
-gunicorn
-Pillow
-psycopg2
-boto3
-django-storages
