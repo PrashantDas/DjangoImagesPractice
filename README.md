@@ -1,4 +1,4 @@
 # DjangoImagesPractice
 Development website for personal testing and learning
-ClientError at /
-An error occurred (400) when calling the HeadObject operation: Bad Request
+
+https://web-production-49c9.up.railway.app/
